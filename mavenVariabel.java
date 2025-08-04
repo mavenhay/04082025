@@ -8,10 +8,7 @@ public class mavenVariabel {
 
         int x = 0;
         while(x<=4) {
-            System.out.println("Teman "+ (x+1));
-            System.out.println("Nama: " + nama[x]);
-            System.out.println("Umur: " + umur[x]);
-            System.out.println("Cita-cita: " + cita[x] + "\n");
+            System.out.println("Teman "+ (x+1) + "\nNama: " + nama[x] + "\nUmur: " + umur[x] + "\nCita-cita: " + cita[x] + "\n");
             x+=1;
         }
     }
