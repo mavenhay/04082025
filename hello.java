@@ -7,7 +7,7 @@ public class hello {
                 Sekolah asal: SMPN 1 Pacet Mojokerto
                 Nama ayah: Wahyu Setianto
                 Nama ibu: Aita Yessi Silia
-                Cita-cita: Menjadi programmer yang menciptakan inovasi baru dan penemuan
+                Cita-cita: Menjadi programmer yang menciptakan inovasi dan penemuan baru
                 Hobi: Coding website atau game, bermain video game, jalan-jalan
                 """);
 
@@ -18,6 +18,8 @@ public class hello {
         double z = 0;
         while (x<=12*y) {
             System.out.print(x);
+            System.out.print(" + ");
+            System.out.print(y);
             if (x%2 == 0) {
                 System.out.println(" = Genap");
             } else {
