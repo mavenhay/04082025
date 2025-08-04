@@ -17,9 +17,7 @@ public class maven {
         int x = 0;
         double z = 0;
         while (x<=12*y) {
-            System.out.print(x);
-            System.out.print(" + ");
-            System.out.print(y);
+            System.out.print(x + " + " + z);
             if (x%2 == 0) {
                 System.out.println(" = Genap");
             } else {
@@ -28,6 +26,10 @@ public class maven {
             z = Math.round(Math.random());
             x+=y;
             x+=z;
+            
+            String huruf = "halo";
+            int angka= 0;
+            System.out.println(huruf + " " + angka);
         }
     }
 }
