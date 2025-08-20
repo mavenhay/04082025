@@ -8,7 +8,7 @@ public class BelanjaBarangMaven {
         Scanner input = new Scanner(System.in);
         ArrayList<String> barang = new ArrayList<>();
         ArrayList<Double> bayar = new ArrayList<>();
-        int totalh = 0;
+        double totalh = 0;
         int belanja = 1;
         while(belanja==1){
             System.out.println("Nama barang "+ (barang.size()+1) + ":");
@@ -23,6 +23,7 @@ public class BelanjaBarangMaven {
             belanja = input.nextInt();
             System.out.println("...");
             String pp = input.nextLine();
+            
         }
         System.out.println("\nBarang yang dibeli:");
         int x = 1;
@@ -33,9 +34,25 @@ public class BelanjaBarangMaven {
         System.out.println(String.format("""
             ==========================
             Total barang: %d
-            Total harga barang: %d
+            Total harga barang: %f
             ==========================
-            Terima Kasih!
             """, barang.size(), totalh));
+
+        while(true){
+            System.out.println("Bayar:");
+            double berapa = input.nextDouble();
+            if(berapa>=totalh){
+                System.out.println("Terima kasih!");
+                System.out.println("Kembalianmu: "+(berapa-totalh));
+                break;
+            } else {
+                System.out.println("Uangmu tidak cukup, ketik 1 untuk cancel, ketik angka lainnya untuk lanjut bayar:");
+                int cancel = input.nextInt();
+                if(cancel==1){
+                    System.out.println("Terima kasih sudah berkunjung!");
+                    break;
+                }
+            }
+        }
     }
 }
